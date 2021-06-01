@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QObject>
 #include <QDebug>
+#include <QBuffer>
 #include "workobject.h"
 
 QT_BEGIN_NAMESPACE
@@ -20,8 +21,11 @@ public:
 
 private:
     Ui::Widget *ui;
+    void readInfo();
 private:
     QThread     * mThread;
-    WorkObject  *mWorkObject;
+    WorkObject  * mWorkObject;
+    QString       mIpv4Path;
+    QBuffer       buffer;
 };
 #endif // WIDGET_H
