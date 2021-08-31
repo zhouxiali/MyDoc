@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/double-click-maybe.png</file>
+        <file>img/double-click-off.png</file>
+    </qresource>
+</RCC>
